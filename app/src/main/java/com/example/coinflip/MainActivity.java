@@ -81,12 +81,10 @@ public class MainActivity extends AppCompatActivity {
     public void gepTipp(int szam) {
         switch (szam) {
             case 0:
-                imageViewCoin.startAnimation(animation);
                 imageViewCoin.setImageResource(R.drawable.heads);
                 Toast.makeText(this, "FEJ.", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
-                imageViewCoin.startAnimation(animation);
                 imageViewCoin.setImageResource(R.drawable.tails);
                 Toast.makeText(this, "ÍRÁS.", Toast.LENGTH_SHORT).show();
                 break;
