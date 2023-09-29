@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CoinFlip"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewCoin"
+        android:layout_gravity="center"
+        android:src="@drawable/heads"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayoutButtons"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FEJ"
+            android:textSize="20dp"
+            android:id="@+id/buttonFej"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ÍRÁS"
+            android:textSize="20dp"
+            android:id="@+id/buttonIras"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEredmeny"
+        android:text="Dobások: 0\nGyőzelem: 0\nVereség: 0"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
